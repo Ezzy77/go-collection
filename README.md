@@ -1,4 +1,5 @@
 # go-collection
+
 a comprehensive collection of fundamental data structures implemented in Golang.
 
 # Data Structures in Go
@@ -20,14 +21,14 @@ This repository contains a collection of common data structures implemented in t
 
 go-collection is a comprehensive collection of fundamental data structures implemented in Golang. This project is for learning purposes only, the aim is to understand how commonly used data structures works under the hood, hence, knowing most efficient data structure for certain cases, in addition, polish my unit testing skills.
 
-A suite of unit tests accompanies each data structure implementation, providing comprehensive coverage to ensure correctness and reliability. 
+A suite of unit tests accompanies each data structure implementation, providing comprehensive coverage to ensure correctness and reliability.
 
 ## Data Structures
 
-1. [LinkedList](./linkedlist.go) - A singly linked list implementation.
-2. [Stack](./stack.go) - A basic stack data structure.
-3. [Queue](./queue.go) - An implementation of a queue using slices.
-
+1. [LinkedList](./collection/list/linkedlist.go) - A singly linked list implementation.
+2. [DoublyLinkedList](./collection/list/doublyLinkedList.go)
+<!-- 3. [Stack](./stack.go) - A basic stack data structure.
+3. [Queue](./queue.go) - An implementation of a queue using slices. -->
 
 ## Usage
 
@@ -43,6 +44,7 @@ import (
 
 func main() {
 	// Example usage of the LinkedList
-	
+
 }
 
+```
