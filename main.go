@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/Ezzy77/go-collection/collection/list"
 )
 
@@ -24,11 +22,14 @@ func main() {
 	// personList.InsertFirst(person3)
 
 	lists.Print()
-	lists.DeleteLast()
-	lists.DeleteLast()
-	lists.DeleteLast()
-	lists.DeleteLast()
-	fmt.Println(lists.DeleteLast())
+	lists.DeleteFirst()
+	lists.Print()
+	lists.DeleteFirst()
+
+	lists.Print()
+	lists.DeleteFirst()
+	lists.Print()
+	lists.DeleteFirst()
 	lists.Print()
 	//personList.Print()
 

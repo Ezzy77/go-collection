@@ -61,8 +61,8 @@ func (l *LinkedList[T]) DeleteFirst() bool {
 	if l.head == nil {
 		return false
 	}
-
-	return false
+	l.head = l.head.next
+	return true
 }
 
 func (l *LinkedList[T]) DeleteLast() bool {
