@@ -15,11 +15,46 @@ type LinkedList[T comparable] struct {
 // insert item in the beginning of the list
 func (l *LinkedList[T]) InsertFirst(v T) {
 	nodeToAdd := &Node[T]{data: v, next: nil}
+	// list not empty
 	if l.head != nil {
 		nodeToAdd.next = l.head
 		l.head = nodeToAdd
 	}
+	// when list is empty
 	l.head = nodeToAdd
+}
+
+func (l *LinkedList[T]) InsertLast(v T) {
+	nodeToAdd := &Node[T]{data: v, next: nil}
+	// if the list is empty
+	if l.head == nil {
+		l.head = nodeToAdd
+		return
+	}
+	// list not empty
+	current := l.head
+	for current.next != nil {
+		current = current.next
+	}
+	current.next = nodeToAdd
+}
+
+func (l *LinkedList[T]) Find(v T) bool {
+	if l.head == nil {
+		return false
+	}
+	if v == l.head.data {
+		return true
+	}
+
+	current := l.head
+	for current.next != nil {
+		if current.data == v {
+			return true
+		}
+		current = current.next
+	}
+	return current.data == v
 }
 
 // display all items in the list
