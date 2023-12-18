@@ -19,12 +19,16 @@ func main() {
 	lists.InsertLast(7)
 	lists.InsertLast(9)
 
-	fmt.Println(lists.Find(6))
-
 	// personList.InsertFirst(person1)
 	// personList.InsertFirst(person2)
 	// personList.InsertFirst(person3)
 
+	lists.Print()
+	lists.DeleteLast()
+	lists.DeleteLast()
+	lists.DeleteLast()
+	lists.DeleteLast()
+	fmt.Println(lists.DeleteLast())
 	lists.Print()
 	//personList.Print()
 

@@ -57,6 +57,32 @@ func (l *LinkedList[T]) Find(v T) bool {
 	return current.data == v
 }
 
+func (l *LinkedList[T]) DeleteFirst() bool {
+	if l.head == nil {
+		return false
+	}
+
+	return false
+}
+
+func (l *LinkedList[T]) DeleteLast() bool {
+	if l.head == nil {
+		return false
+	}
+	if l.head.next == nil {
+		l.head = nil
+		return true
+	}
+	current := l.head
+	previous := l.head
+	for current.next != nil {
+		previous = current
+		current = current.next
+	}
+	previous.next = nil
+	return true
+}
+
 // display all items in the list
 func (l *LinkedList[T]) Print() {
 	current := l.head
@@ -66,5 +92,6 @@ func (l *LinkedList[T]) Print() {
 		current = current.next
 	}
 	fmt.Print("nil")
-	fmt.Print("]")
+	fmt.Println("]")
+
 }
