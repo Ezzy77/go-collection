@@ -25,8 +25,8 @@ A suite of unit tests accompanies each data structure implementation, providing 
 
 ## Data Structures
 
-1. [LinkedList](./collection/list/linkedlist.go) - A singly linked list implementation.
-2. [DoublyLinkedList](./collection/list/doublyLinkedList.go)
+1. [LinkedList](./collection/list/linkedList.go) - A singly linked list implementation.
+2. [DoublyLinkedList](./collection/list/doublyLinkedList.go) - A doubly linked list implementation
 <!-- 3. [Stack](./stack.go) - A basic stack data structure.
 3. [Queue](./queue.go) - An implementation of a queue using slices. -->
 
